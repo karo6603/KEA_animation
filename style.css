@@ -1,130 +1,115 @@
 body,
 html {
     margin: 0;
-    height: 100%;
-    overflow: hidden;
 }
 
-/************ menu **************/
+screen {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+/************ titelskærm **************/
 
 #menu_background {
-    background: url(Objekter/start%20sk%C3%A6rm-100.jpg);
-    background-size: cover;
+    background: url(Objekter/start%20sk%C3%A6rm.png);
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    height: 56.25vw;
     width: 100vw;
-    position: relative;
-    display: none;
-}
-
-#overskrift {
-    background: url(Objekter/Artboard%2056.svg);
-    z-index: 1;
-    height: 30vh;
-    width: 90vw;
-    background-repeat: no-repeat;
-    left: 5vw;
-    top: 4vh;
     position: absolute;
-    background-size: contain;
-    background-position: center;
-    display: none;
 }
 
-#play_knap {
+#start {
     background: url(Objekter/play%20knap.svg);
-    z-index: 1;
-    height: 40vh;
-    width: 40vw;
+    height: 30vw;
+    width: 30vw;
     background-repeat: no-repeat;
-    left: 30vw;
-    top: 25vh;
+    left: 36vw;
+    top: 15vw;
     position: absolute;
-    background-size: contain;
-    background-position: center;
-    display: none;
+    background-size: 100%;
 }
 
 #settings {
     background: url(Objekter/Settings%20knap.svg);
-    z-index: 1;
-    height: 10vh;
-    width: 10vw;
+    height: 6vw;
+    width: 6vw;
     background-repeat: no-repeat;
-    left: 89vw;
-    top: 1vh;
+    left: 93vw;
+    top: 1vw;
     position: absolute;
-    background-size: contain;
-    background-position: right;
+    background-size: 100%;
 }
 
 /**************** settings ******************/
 
 #settings_skærm {
     background: url(Objekter/Settings.svg);
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
     position: absolute;
-    height: 70vh;
-    width: 99vw;
-    z-index: 1;
-    left: 0.5vw;
-    top: 12vh;
-    display: none;
+    height: 40vw;
+    width: 65vw;
+    left: 18vw;
+    top: 9vw;
 }
 
 #mute {
     background: url(Objekter/knap%20slukket.svg);
-    z-index: 1;
-    height: 20vh;
-    width: 20vw;
+    height: 5vw;
+    width: 10vw;
     background-repeat: no-repeat;
-    left: 70vw;
-    top: 25vh;
+    left: 65vw;
+    top: 23vw;
     position: absolute;
-    background-size: contain;
-    display: none;
+    background-size: 100%;
 }
 
 #fx {
     background: url(Objekter/knap%20slukket.svg);
-    z-index: 1;
-    height: 20vh;
-    width: 20vw;
+    height: 5vw;
+    width: 10vw;
     background-repeat: no-repeat;
-    left: 70vw;
-    top: 38vh;
+    left: 65vw;
+    top: 34vw;
     position: absolute;
-    background-size: contain;
-    display: none;
+    background-size: 100%;
 }
 
 #luk {
     background: url(Objekter/afslut.svg);
-    z-index: 1;
-    height: 8vh;
-    width: 8vw;
+    height: 6vw;
+    width: 6vw;
     background-repeat: no-repeat;
-    left: 86vw;
-    top: 9vh;
+    left: 75vw;
+    top: 11vw;
     position: absolute;
-    background-size: contain;
-    background-position: right;
-    display: none;
+    background-size: 100%;
+}
+
+/**************** forklaring **********/
+
+#forklaring {
+    background: url(Objekter/spilbeskrivelse.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 50vw;
+    width: 80vw;
+    left: 10vw;
+    top: 10vw;
 }
 
 /************** spilskærm**************/
 
 #game_background {
     background: url(Objekter/Baggrund-100.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    height: 56.25vw;
     width: 100vw;
-    position: relative;
+    position: absolute;
 }
 
 
@@ -132,185 +117,131 @@ html {
 
 #points {
     background: url(Objekter/point%20bar.svg);
-    z-index: 1;
-    height: 5vh;
-    width: 60vw;
+    height: 5vw;
+    width: 50vw;
     background-repeat: no-repeat;
-    left: 20vw;
-    top: 0.5vh;
+    left: 26vw;
+    top: 0.5vw;
     position: absolute;
-    background-size: contain;
-    background-position: center;
+    background-size: 100%
 }
 
 #energi {
     background: url(Objekter/livbar.svg);
-    z-index: 1;
-    height: 5vh;
-    width: 60vw;
+    height: 5vw;
+    width: 50vw;
     background-repeat: no-repeat;
-    left: 20vw;
-    top: 5vh;
+    left: 26vw;
+    top: 5vw;
     position: absolute;
-    background-size: contain;
-    background-position: center;
+    background-size: 100%;
 }
 
 #time {
     background: url(Objekter/blomst.svg);
-    z-index: 1;
-    height: 10vh;
+    height: 10vw;
     width: 10vw;
     background-repeat: no-repeat;
     left: 1vw;
-    top: 1vh;
+    top: 1vw;
     position: absolute;
-    background-size: contain;
-    background-position: left;
+    background-size: 100%;
 }
 
 #glad_blomst {
     background: url(Objekter/glad%20blomst.svg);
-    z-index: 1;
-    height: 15vh;
+    height: 15vw;
     width: 10vw;
     background-repeat: no-repeat;
     left: 15vw;
-    top: 18vh;
+    top: 18vw;
     position: absolute;
-    background-size: contain;
+    background-size: 100%;
 }
 
 #sur_blomst {
     background: url(Objekter/sur%20blomst.svg);
-    z-index: 1;
-    height: 15vh;
+    height: 15vw;
     width: 10vw;
     background-repeat: no-repeat;
     left: 30vw;
-    top: 30vh;
+    top: 30vw;
     position: absolute;
-    background-size: contain;
+    background-size: 100%;
 }
 
 #svamp {
     background: url(Objekter/svamp.svg);
-    z-index: 1;
-    height: 15vh;
+    height: 15vw;
     width: 10vw;
     background-repeat: no-repeat;
     left: 50vw;
-    top: 25vh;
+    top: 25vw;
     position: absolute;
-    background-size: contain;
+    background-size: 100%;
 }
 
 #ukrudt {
     background: url(Objekter/ukrudt.svg);
-    z-index: 1;
-    height: 15vh;
+    height: 15vw;
     width: 10vw;
     background-repeat: no-repeat;
     left: 70vw;
-    top: 40vh;
+    top: 30vw;
     position: absolute;
-    background-size: contain;
+    background-size: 100%;
 }
 
-/**************** forklaring **********/
 
-#forklaring {
-    background: url(Objekter/spilbeskrivelse.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    height: 70vh;
-    width: 99vw;
-    z-index: 1;
-    left: 0.5vw;
-    top: 12vh;
-    display: none;
-}
 
 /*********** slutskærm ******/
 
-#slut {
-    background: url(Objekter/slutsk%C3%A6rm-100.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-    display: none;
-}
-
 #gameover {
-    background: url(Objekter/game%20over.svg);
-    z-index: 1;
-    height: 30vh;
-    width: 90vw;
+    background: url(Objekter/slutsk%C3%A6rm.png);
+    height: 56.25vw;
+    width: 100vw;
     background-repeat: no-repeat;
-    left: 5vw;
-    top: 4vh;
     position: absolute;
-    background-size: contain;
-    background-position: center;
-    display: none;
+    background-size: 100%;
 }
 
-#retry {
-    background: url(Objekter/retry.svg);
-    z-index: 1;
+#retry_knap {
+    background: url(Objekter/retry%20knap.svg);
     height: 30vh;
     width: 30vw;
     background-repeat: no-repeat;
     left: 35vw;
-    top: 20vh;
+    top: 22vh;
     position: absolute;
-    background-size: contain;
-    background-position: center;
-    display: none;
-}
-
-#knap {
-    background: url(Objekter/retry%20knap.svg);
-    z-index: 1;
-    height: 40vh;
-    width: 40vw;
-    background-repeat: no-repeat;
-    left: 30vw;
-    top: 40vh;
-    position: absolute;
-    background-size: contain;
-    background-position: center;
-    display: none;
+    background-size: 100%;
 }
 
 #levelcomplete {
-    background: url(Objekter/you%20won.svg);
-    z-index: 1;
-    height: 30vh;
-    width: 90vw;
+    background: url(Objekter/you%20won_1.png);
+    height: 56.25vw;
+    width: 100vw;
     background-repeat: no-repeat;
-    left: 5vw;
-    top: 4vh;
     position: absolute;
-    background-size: contain;
-    background-position: center;
+    background-size: 100%;
+}
+
+/************* animation ***********/
+
+.hide {
     display: none;
 }
 
-#play_again {
-    background: url(Objekter/play%20again.svg);
-    z-index: 1;
-    height: 40vh;
-    width: 40vw;
-    background-repeat: no-repeat;
-    left: 30vw;
-    top: 15vh;
-    position: absolute;
-    background-size: contain;
-    background-position: center;
-    display: none;
+.fade_in{
+    animation-name: fade_in_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade_in_kf{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
 }
