@@ -20,6 +20,8 @@ function showStart() {
     document.querySelector("#mute_on").classList.add("hide");
     document.querySelector("#fx_on").classList.add("hide");
     document.querySelector("#luk").classList.add("hide");
+    document.querySelector("#mute_off").classList.add("hide");
+    document.querySelector("#fx_off").classList.add("hide");
 
     document.querySelector("#start").addEventListener("click", hideStart);
     document.querySelector("#settings").addEventListener("click", settingStart);

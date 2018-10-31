@@ -120,7 +120,7 @@ screen {
     height: 50vw;
     width: 80vw;
     left: 10vw;
-    top: 10vw;
+    top: 5vw;
 }
 
 #luk2 {
@@ -129,7 +129,7 @@ screen {
     width: 4vw;
     background-repeat: no-repeat;
     left: 84vw;
-    top: 12vw;
+    top: 7vw;
     position: absolute;
     background-size: 100%;
 }
