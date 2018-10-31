@@ -55,7 +55,7 @@ screen {
     top: 9vw;
 }
 
-#mute {
+#mute_off {
     background: url(Objekter/knap%20slukket.svg);
     height: 5vw;
     width: 10vw;
@@ -66,8 +66,30 @@ screen {
     background-size: 100%;
 }
 
-#fx {
+#mute_on {
+    background: url(Objekter/knap%20t%C3%A6ndt.svg);
+    height: 5vw;
+    width: 10vw;
+    background-repeat: no-repeat;
+    left: 65vw;
+    top: 23vw;
+    position: absolute;
+    background-size: 100%;
+}
+
+#fx_off {
     background: url(Objekter/knap%20slukket.svg);
+    height: 5vw;
+    width: 10vw;
+    background-repeat: no-repeat;
+    left: 65vw;
+    top: 34vw;
+    position: absolute;
+    background-size: 100%;
+}
+
+#fx_on {
+    background: url(Objekter/knap%20t%C3%A6ndt.svg);
     height: 5vw;
     width: 10vw;
     background-repeat: no-repeat;
@@ -99,6 +121,17 @@ screen {
     width: 80vw;
     left: 10vw;
     top: 10vw;
+}
+
+#luk2 {
+    background: url(Objekter/afslut.svg);
+    height: 4vw;
+    width: 4vw;
+    background-repeat: no-repeat;
+    left: 84vw;
+    top: 12vw;
+    position: absolute;
+    background-size: 100%;
 }
 
 /************** spilskærm**************/
@@ -231,17 +264,35 @@ screen {
     display: none;
 }
 
-.fade_in{
+.fade_in {
     animation-name: fade_in_kf;
-    animation-duration: 2s;
+    animation-duration: .5s;
     animation-iteration-count: 1;
 }
 
-@keyframes fade_in_kf{
-    0%{
+@keyframes fade_in_kf {
+    0% {
         opacity: 0;
     }
-    100%{
-        opacity: 100;
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade_out {
+    animation-name: fade_out_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_out_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
