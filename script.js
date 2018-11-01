@@ -1,8 +1,10 @@
+let score = 0;
+
 window.addEventListener("load", sidenVises);
 
 function sidenVises() {
     console.log("siden vises");
-    //Hvad der skal ske
+
     showStart()
 }
 
@@ -23,6 +25,8 @@ function showStart() {
     document.querySelector("#mute_off").classList.add("hide");
     document.querySelector("#fx_off").classList.add("hide");
 
+    document.querySelector("#start").classList.add("pulse");
+
     document.querySelector("#start").addEventListener("click", hideStart);
     document.querySelector("#settings").addEventListener("click", settingStart);
 }
@@ -32,6 +36,7 @@ function settingStart() {
 
     document.querySelector("#settings").removeEventListener("click", settingStart);
     document.querySelector("#start").classList.add("hide");
+    document.querySelector("#start").classList.remove("pulse");
 
     document.querySelector("#settings_skærm").classList.remove("hide");
     document.querySelector("#mute_on").classList.remove("hide");
@@ -86,7 +91,8 @@ function fxOn() {
 function hideStart() {
     console.log("der er klikket");
 
-    document.querySelector("#start").removeEventListener("click", hideStart)
+    document.querySelector("#start").removeEventListener("click", hideStart);
+    document.querySelector("#start").classList.remove("pulse");
 
     document.querySelector("#menu_background").classList.add("fade_out");
     document.querySelector("#start").classList.add("fade_out");
@@ -141,4 +147,57 @@ function startGame() {
     document.querySelector("#luk2").classList.add("hide");
 
     document.querySelector("#game_ui").classList.remove("hide");
+
+    document.querySelector("#glad_blomst1").addEventListener("click", flowerClick);
+    document.querySelector("#glad_blomst2").addEventListener("click", flowerClick);
+    document.querySelector("#glad_blomst3").addEventListener("click", flowerClick);
+    document.querySelector("#glad_blomst4").addEventListener("click", flowerClick);
+    document.querySelector("#glad_blomst5").addEventListener("click", flowerClick);
+    document.querySelector("#svamp1").addEventListener("click", shroomClick);
+    document.querySelector("#svamp2").addEventListener("click", shroomClick);
+    document.querySelector("#ukrudt1").addEventListener("click", weedClick);
+    document.querySelector("#ukrudt2").addEventListener("click", weedClick);
+    document.querySelector("#ukrudt3").addEventListener("click", weedClick);
+    document.querySelector("#ukrudt4").addEventListener("click", weedClick);
+    document.querySelector("#ukrudt5").addEventListener("click", weedClick);
+}
+
+function flowerClick() {
+    console.log("blomst")
+    //score = score + 1;
+    //score += 1;
+
+    score--;
+    console.log(score);
+
+    //document.querySelector("#points").innerHTML = "Score: " + score;
+
+    console.log(this);
+    this.classList.add("hide");
+    this.removeEventListener("click", flowerClick);
+}
+
+
+
+function weedClick() {
+    console.log("ukrudt")
+    //score = score - 1;
+    //score -= 1;
+    score++;
+    console.log(score);
+
+    //document.querySelector("#points").innerHTML = "Score: " + score;
+
+    console.log(this);
+    this.classList.add("hide");
+    this.removeEventListener("click", weedClick);
+}
+
+function shroomClick() {
+    console.log("ukrudt")
+
+
+    console.log(this);
+    this.classList.add("hide");
+    this.removeEventListener("click", weedClick);
 }

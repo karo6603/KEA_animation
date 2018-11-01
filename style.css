@@ -3,7 +3,7 @@ html {
     margin: 0;
 }
 
-screen {
+#screen {
     width: 100vw;
     height: 56.25vw;
     position: relative;
@@ -29,6 +29,7 @@ screen {
     top: 15vw;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
 }
 
 #settings {
@@ -40,6 +41,7 @@ screen {
     top: 1vw;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
 }
 
 /**************** settings ******************/
@@ -64,6 +66,7 @@ screen {
     top: 23vw;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
 }
 
 #mute_on {
@@ -75,6 +78,7 @@ screen {
     top: 23vw;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
 }
 
 #fx_off {
@@ -86,6 +90,7 @@ screen {
     top: 34vw;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
 }
 
 #fx_on {
@@ -97,6 +102,7 @@ screen {
     top: 34vw;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
 }
 
 #luk {
@@ -108,6 +114,7 @@ screen {
     top: 11vw;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
 }
 
 /**************** forklaring **********/
@@ -132,6 +139,7 @@ screen {
     top: 7vw;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
 }
 
 /************** spilskærm**************/
@@ -181,7 +189,19 @@ screen {
     background-size: 100%;
 }
 
-#glad_blomst {
+#glad_blomst1 {
+    background: url(Objekter/glad%20blomst.svg);
+    height: 15vw;
+    width: 10vw;
+    background-repeat: no-repeat;
+    left: 3vw;
+    top: 28vw;
+    position: absolute;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#glad_blomst2 {
     background: url(Objekter/glad%20blomst.svg);
     height: 15vw;
     width: 10vw;
@@ -190,20 +210,47 @@ screen {
     top: 18vw;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
 }
 
-#sur_blomst {
-    background: url(Objekter/sur%20blomst.svg);
+#glad_blomst3 {
+    background: url(Objekter/glad%20blomst.svg);
     height: 15vw;
     width: 10vw;
     background-repeat: no-repeat;
-    left: 30vw;
-    top: 30vw;
+    left: 40vw;
+    top: 29vw;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
 }
 
-#svamp {
+#glad_blomst4 {
+    background: url(Objekter/glad%20blomst.svg);
+    height: 15vw;
+    width: 10vw;
+    background-repeat: no-repeat;
+    left: 68vw;
+    top: 12vw;
+    position: absolute;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#glad_blomst5 {
+    background: url(Objekter/glad%20blomst.svg);
+    height: 15vw;
+    width: 10vw;
+    background-repeat: no-repeat;
+    left: 80vw;
+    top: 40vw;
+    position: absolute;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+
+#svamp1 {
     background: url(Objekter/svamp.svg);
     height: 15vw;
     width: 10vw;
@@ -212,9 +259,22 @@ screen {
     top: 25vw;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
 }
 
-#ukrudt {
+#svamp2 {
+    background: url(Objekter/svamp.svg);
+    height: 15vw;
+    width: 10vw;
+    background-repeat: no-repeat;
+    left: 18vw;
+    top: 40vw;
+    position: absolute;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#ukrudt1 {
     background: url(Objekter/ukrudt.svg);
     height: 15vw;
     width: 10vw;
@@ -223,6 +283,55 @@ screen {
     top: 30vw;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
+}
+
+#ukrudt2 {
+    background: url(Objekter/ukrudt.svg);
+    height: 15vw;
+    width: 10vw;
+    background-repeat: no-repeat;
+    left: 54vw;
+    top: 40vw;
+    position: absolute;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#ukrudt3 {
+    background: url(Objekter/ukrudt.svg);
+    height: 15vw;
+    width: 10vw;
+    background-repeat: no-repeat;
+    left: 24vw;
+    top: 26vw;
+    position: absolute;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#ukrudt4 {
+    background: url(Objekter/ukrudt.svg);
+    height: 15vw;
+    width: 10vw;
+    background-repeat: no-repeat;
+    left: 40vw;
+    top: 12vw;
+    position: absolute;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#ukrudt5 {
+    background: url(Objekter/ukrudt.svg);
+    height: 15vw;
+    width: 10vw;
+    background-repeat: no-repeat;
+    left: 90vw;
+    top: 16vw;
+    position: absolute;
+    background-size: 100%;
+    cursor: pointer;
 }
 
 
@@ -247,6 +356,7 @@ screen {
     top: 22vh;
     position: absolute;
     background-size: 100%;
+    cursor: pointer;
 }
 
 #levelcomplete {
@@ -262,6 +372,25 @@ screen {
 
 .hide {
     display: none;
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .fade_in {
